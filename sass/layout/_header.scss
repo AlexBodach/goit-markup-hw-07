@@ -3,17 +3,16 @@
   padding-top: 25px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14x;
+  line-height: 1.14px;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.header .container {
+.navigation {
   display: flex;
   align-items: center;
 }

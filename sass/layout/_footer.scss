@@ -4,43 +4,17 @@
   background-color: #2f303a;
 }
 
-.footer .logo {
-  margin-bottom: 20px;
-}
-
-.menu {
-  display: block;
-  list-style: none;
-  font-style: normal;
-}
-
-.menu:visited {
-  color: var(--secondary-text-color);
-}
-
-.down {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.link-down {
-  margin-top: 9px;
-}
-
-.box-adress {
-  width: 231px;
-}
-
-.box {
+.container__footer {
   display: flex;
   align-items: baseline;
 }
 
-.box-socials {
+.follow {
   margin-left: 70px;
 }
 
-.text-social {
-  display: block;
+.follow__title,
+.post__title {
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -49,25 +23,18 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
-.adress-socials {
-  display: flex;
+.post {
+  margin-left: 93px;
 }
 
-.dark {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.white {
-  fill: var(--white-color);
-}
-.dark-mail {
-  width: 354px;
+.post__email {
+  width: 358px;
   height: 50px;
   background-color: #2f303a;
-  margin-right: 0px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -82,35 +49,10 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
-}
 
-.dark-mail:focus,
-.dark-mail:hover,
-.dark-mail:focus.dark-mail:focus::placeholder {
-  border-color: #2196f3;
-}
-
-.post {
-  margin-left: 93px;
-  width: 570px;
-}
-
-.post > .button {
-  display: inline-block;
-  width: 200px;
-  border: 0px;
-  height: 50px;
-  margin-left: 12px;
-  margin-top: 0;
-  padding-left: 29px;
-  padding-right: 62px;
-  position: relative;
-}
-
-.messenger {
-  position: absolute;
-  right: 26px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 2px;
+  &:focus,
+  &:hover,
+  &:focus.post__email:focus::placeholder {
+    border-color: #2196f3;
+  }
 }
