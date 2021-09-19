@@ -1,0 +1,24 @@
+/**/
+@import "../sass/utils/vars";
+@import "../sass/base/reset";
+@import "../sass/base/container";
+@import "../sass/base/body";
+@import "./base/hidden";
+@import "./components/modal";
+
+@import "../sass/layout/header";
+@import "../sass/components/logo";
+@import "../sass/layout/nav-menu";
+@import "../sass/layout/hero";
+@import "../sass/components/btn";
+@import "./layout/peculiarities";
+@import "./layout/doing";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/clients-form-information";
+
+/* Страницы Portfolio */
+
+@import "./components/portfolio-filters";
+@import "./layout/portfolio-posters";
