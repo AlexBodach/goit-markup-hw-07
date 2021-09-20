@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Домашняя работа 6</title>
+    <title> Домашняя работа 7</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link
@@ -56,277 +56,295 @@
             </ul>
         </div>
     </header>
-    <main>                       
-        <section class="filter">
+    <main class="main">                       
+        <section class="portfolio__hero">
             <div class="container">
-                <h1 class="block-name secret">Наши работы</h1>
-                <ul class="filter-block">
-                    <li class="list-fb">
-                        <button class="filter-fb" type="button">Все</button>
-                    </li>
-                    <li class="list-fb">
-                        <button class="filter-fb" type="button">Веб-сайты</button>
-                    </li>
-                    <li class="list-fb">
-                        <button class="filter-fb" type="button">Приложения</button>
-                    </li>
-                    <li class="list-fb">
-                        <button class="filter-fb" type="button">Дизайн</button>
-                    </li>
-                    <li class="list-fb">
-                        <button class="filter-fb" type="button">Маркетинг</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="container">
-                <ul class="menu prt">
-                    <li class="list-poster">
-                        <div class="block-active">
-                            <a class="posters" href="">
-                                <div class="shadow">
-                                    <div class="container-over">
-                                        <img src="./images/portfolio/technokryak.jpg" alt="Веб сайт проекта Технокряк" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
+                <div class="filter">
+                    <h1 class="filter__title is-hidden">Наши работы</h1>
+                    <ul class="filter__list">
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Все</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Веб-сайты</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Приложения</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Дизайн</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+                </div>            
+                <div class="posters">
+                    <ul class="posters__list">
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/technokryak.jpg" alt="Веб сайт проекта Технокряк" width="370"
+                                                height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Технокряк</h2>
+                                            <p class="posters__service">Веб-сайт</p>
                                         </div>
                                     </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo">Технокряк</h2>
-                                        <p class="posters-ptext">Веб-сайт</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="list-poster">
-                       <div class="block-active">
-                            <a class="posters" href="">
-                              <div class="shadow">
-                                <div class="container-over">
-                                    <img src="./images/portfolio/poster.jpg" alt="Постер" width="370" height="294">
-                                    <div class="box-posters">
-                                        <p class="text-back">
-                                            Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                                            шпионажа и атак на защищённые сервера конкурентов.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h2 class="posters-plogo">Постер New Orlean vs Golden Star</h2>
-                                    <p class="posters-ptext">Дизайн</p>
-                                </div>
-                              </div>
-                            </a>
-                       </div>
-                    </li>
-                    <li class="list-poster">
-                       <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                   <div class="container-over">
-                                        <img src="./images/portfolio/restoran.jpg" alt="Ресторан морской кухни" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/poster.jpg" alt="Постер" width="370" height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Постер New Orlean vs Golden Star</h2>
+                                            <p class="posters__service">Дизайн</p>
                                         </div>
                                     </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo">Ресторан <span lang="en">Seafood</span></h2>
-                                        <p class="posters-ptext">Приложение</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/restoran.jpg" alt="Ресторан морской кухни" width="370"
+                                                height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Ресторан <span lang="en">Seafood</span></h2>
+                                            <p class="posters__service">Приложение</p>
+                                        </div>
                                     </div>
-                               </div>
-                            </a>
-                       </div>
-                    </li>
-                    <li class="list-poster">
-                       <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                    <div class="container-over">
-                                        <img src="./images/portfolio/project-prime.jpg" alt="Изображение наушников" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/project-prime.jpg" alt="Изображение наушников" width="370"
+                                                height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Проект <span lang="en">Prime</span></h2>
+                                            <p class="posters__service">Маркетинг</p>
+                                        </div>
                                     </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/procject-boxes.jpg" alt="Изображение дизайнерских коробок"
+                                                width="370" height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Проект <span lang="en">Boxes</span></h2>
+                                            <p class="posters__service">Приложение</p>
+                                        </div>
                                     </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo">Проект <span lang="en">Prime</span></h2>
-                                        <p class="posters-ptext">Маркетинг</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/web-site.jpg" alt="Веб сайт проекта" width="370" height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title" lang="en">Inspiration has no Borders</h2>
+                                            <p class="posters__service">Веб-сайт</p>
+                                        </div>
                                     </div>
-                               </div>
-                            </a>
-                       </div>
-                    </li>
-                    <li class="list-poster">
-                        <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                   <div class="container-over">
-                                        <img src="./images/portfolio/procject-boxes.jpg" alt="Изображение дизайнерских коробок" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
-                                   </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/design.jpg" alt="Изображение разворота журнала" width="370"
+                                                height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Издание <span lang="en">Limited Edition</span></h2>
+                                            <p class="posters__service">Дизайн</p>
+                                        </div>
                                     </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo">Проект <span lang="en">Boxes</span></h2>
-                                        <p class="posters-ptext">Приложение</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/project-lab.jpg" alt="Изображение дизайнерского элемента"
+                                                width="370" height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title">Проект <span lang="en">LAB</span></h2>
+                                            <p class="posters__service">Маркетинг</p>
+                                        </div>
                                     </div>
-                               </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="list-poster">
-                        <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                   <div class="container-over">
-                                        <img src="./images/portfolio/web-site.jpg" alt="Веб сайт проекта" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
-                                   </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="posters__item">
+                            <div class="posters__case">
+                                <a class="posters__link" href="">
+                                    <div class="posters__box">
+                                        <div class="posters__container">
+                                            <img src="./images/portfolio/growing-business.jpg" alt="Изображение рабочего места" width="370"
+                                                height="294">
+                                            <div class="back-form">
+                                                <p class="back-form__text">
+                                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                                                    платформу для
+                                                    цифрового
+                                                    шпионажа и атак на защищённые сервера конкурентов.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="posters__caption">
+                                            <h2 class="posters__title" lang="en">Growing Business</h2>
+                                            <p class="posters__service">Приложение</p>
+                                        </div>
                                     </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo" lang="en">Inspiration has no Borders</h2>
-                                        <p class="posters-ptext">Веб-сайт</p>
-                                    </div>
-                               </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="list-poster">
-                        <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                   <div class="container-over">
-                                        <img src="./images/portfolio/design.jpg" alt="Изображение разворота журнала" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
-                                   </div>
-                                    </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo">Издание <span lang="en">Limited Edition</span></h2>
-                                        <p class="posters-ptext">Дизайн</p>
-                                    </div>
-                               </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="list-poster">
-                        <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                    <div class="container-over">
-                                        <img src="./images/portfolio/project-lab.jpg" alt="Изображение дизайнерского элемента" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
-                                    </div>
-                                    </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo">Проект <span lang="en">LAB</span></h2>
-                                        <p class="posters-ptext">Маркетинг</p>
-                                    </div>
-                               </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="list-poster">
-                        <div class="block-active">
-                            <a class="posters" href="">
-                               <div class="shadow">
-                                    <div class="container-over">
-                                        <img src="./images/portfolio/growing-business.jpg" alt="Изображение рабочего места" width="370" height="294">
-                                        <div class="box-posters">
-                                            <p class="text-back">
-                                                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-                                                цифрового
-                                                шпионажа и атак на защищённые сервера конкурентов.
-                                            </p>
-                                    </div>
-                                    </div>
-                                    <div class="caption">
-                                        <h2 class="posters-plogo" lang="en">Growing Business</h2>
-                                        <p class="posters-ptext">Приложение</p>
-                                    </div>
-                               </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>                    
         </section>
     </main>
 <footer class="footer">
-    <div class="container box">
-        <div class="box-adress">
-            <a href="" class="logo white"> <span>Web</span>Studio </a>
+    <div class="container container__footer">
+        <div class="footer__box">
+            <a href="" class="logo logo--white"> <span>Web</span>Studio </a>
             <address class="adress">
-                <ul class="menu">
-                    <li class="link-down">
-                        <a class="link white"
+                <ul class="contact-information__list">
+                    <li class="contact-information__item">
+                        <a class="contact-information__link contact-information__link--white"
                             href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!4m13!1m7!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4265807!4d30.5383858!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                             target="blannk">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li class="link-down">
-                        <a class="link down" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="contact-information__item">
+                        <a class="contact-information__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="link-down">
-                        <a class="link down" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="contact-information__item">
+                        <a class="contact-information__link" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>
         </div>
-        <div class="box-socials">
-            <h3 class="text-social">ПРИСОЕДИНЯЙТЕСЬ</h3>
+        <div class="follow">
+            <h3 class="follow__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
             <ul class="menu adress-socials">
-                <li class="socials-item">
-                    <a href="" class="social-link dark">
-                        <svg class="social-icons white" width="20" height="20">
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--grey">
+                        <svg class="socials__icon socials__icon--white" width="20" height="20">
                             <use href="./images/sprite.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="socials-item">
-                    <a href="" class="social-link dark">
-                        <svg class="social-icons white" width="20" height="20">
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--grey">
+                        <svg class="socials__icon socials__icon--white" width="20" height="20">
                             <use href="./images/sprite.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="socials-item">
-                    <a href="" class="social-link dark">
-                        <svg class="social-icons white" width="20" height="20">
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--grey">
+                        <svg class="socials__icon socials__icon--white" width="20" height="20">
                             <use href="./images/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="socials-item">
-                    <a href="" class="social-link dark">
-                        <svg class="social-icons white" width="20" height="20">
+                <li class="socials__item">
+                    <a href="" class="socials__link socials__link--grey">
+                        <svg class="socials__icon socials__icon--white" width="20" height="20">
                             <use href="./images/sprite.svg#icon-linkedin"></use>
                         </svg>
                     </a>
@@ -334,17 +352,22 @@
             </ul>
         </div>
         <div class="post">
-            <h3 class="text-social">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-            <input type="email" class="dark-mail" placeholder="E-mail" />
-            <button type="submit" class="button">
+            <label>
+                <h3 class="post__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                <input type="email" class="post__email" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="button post__button">
                 Подписаться
-                <svg class="messenger" width="24" height="24">
+                <svg class="post__icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-telegram"></use>
                 </svg>
             </button>
         </div>
-    </div>
+    </div>    
 </footer>
 </body>
     
 </html>
+
+
+

@@ -51,6 +51,8 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  height: 0;
+  width: 0;
 }
 
 .modal {
@@ -296,7 +298,7 @@ body {
   cursor: pointer;
 }
 
-/*---------Кнопка в HEADER--------------------*/
+/*---------Кнопка в FOOTER--------------------*/
 .post__button {
   padding-left: 29px;
   padding-right: 62px;
@@ -310,13 +312,17 @@ body {
   transform: translateY(-50%);
 }
 
+/*---------Кнопка d форме--------------------*/
+.button-modal {
+  padding-right: 56px;
+  padding-left: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .peculiarities {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.peculiarities__name {
-  display: none;
 }
 
 .peculiarities__list {
@@ -643,13 +649,13 @@ body {
   color: var(--white-color);
 }
 
-.inform-box {
+.form__box {
   padding: 40px;
   width: 100%;
   height: 100%;
 }
 
-.name-form {
+.form__title {
   height: 23px;
   margin-bottom: 12px;
   font-family: Roboto;
@@ -662,7 +668,18 @@ body {
   color: #212121;
 }
 
-.text-form {
+.form__container {
+  position: relative;
+  height: 58px;
+  margin-bottom: 10px;
+}
+
+.form__container--comment {
+  height: 138px;
+  margin-bottom: 20px;
+}
+
+.form__name {
   margin-bottom: 4px;
   height: 14px;
   font-family: Roboto;
@@ -674,7 +691,7 @@ body {
   color: #757575;
 }
 
-.inform {
+.form__input {
   padding-left: 42px;
   width: 100%;
   height: 40px;
@@ -687,7 +704,26 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.inform-icon {
+.form__input:focus, .form__input:hover, .form__input:focus.inform:focus::placeholder {
+  cursor: pointer;
+  border-color: #2196f3;
+}
+
+.form__input:focus + .form__icon,
+.form__input:hover + .form__icon {
+  fill: #2196f3;
+}
+
+.form__input--comment {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  height: 120px;
+  resize: none;
+}
+
+.form__icon {
   position: absolute;
   left: 12px;
   bottom: 2px;
@@ -697,27 +733,42 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.inform:focus,
-.inform:hover,
-.inform:focus.inform:focus::placeholder {
-  border-color: #2196f3;
+.inform-chek {
+  margin-right: 7px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.inform:focus + .inform-icon,
-.inform:hover + .inform-icon {
-  fill: #2196f3;
+.inform-chek:checked + .inform-chek__case {
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/check.svg);
 }
 
-.textcomment {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  height: 120px;
-  resize: none;
+.inform-chek__box {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.agreement {
+.inform-chek__case {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+}
+
+.license-icon {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+}
+
+.inform-chek__agreement {
   margin-left: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -728,7 +779,7 @@ body {
   color: #757575;
 }
 
-.agreement-link {
+.inform-chek__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -739,7 +790,7 @@ body {
   color: #2196f3;
 }
 
-.box-button {
+.button__box {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -747,83 +798,13 @@ body {
   justify-content: center;
 }
 
-.button-modal {
-  padding-right: 56px;
-  padding-left: 55px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 0;
-  border-radius: 4px;
-  border-color: transparent;
-  font-family: Roboto;
-  color: var(--white-color);
-  background-color: var(--accent-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  text-align: center;
-  justify-content: center;
-}
-
-.box-size {
-  position: relative;
-  height: 58px;
-  margin-bottom: 10px;
-}
-
-.box-comment {
-  height: 138px;
-  margin-bottom: 20px;
-}
-
-.checkbox__box {
-  display: flex;
-  position: relative;
-  margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-.inform-chek {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.inform-chek {
-  margin-right: 7px;
-}
-
-.check__box {
-  position: absolute;
-  left: 12px;
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-}
-
-.inform-chek:checked + .check__box {
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/check.svg);
-}
-
-.license-icon {
-  position: absolute;
-  top: 4px;
-  left: 12px;
-}
-
 /* Страницы Portfolio */
-.filter {
+.portfolio__hero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.filter-block {
+.filter__list {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -837,7 +818,15 @@ body {
   color: var(--secondary-text-color);
 }
 
-.filter-fb {
+.filter__item {
+  margin-right: 8px;
+}
+
+.filter__item:last-child {
+  margin-right: 0px;
+}
+
+.filter__button {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -862,28 +851,71 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-fb:focus,
-.filter-fb:hover {
+.filter__button:focus, .filter__button:hover {
   color: var(--white-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.list-fb {
-  margin-right: 8px;
-}
-
-.list-fb:last-child {
-  margin-right: 0px;
-}
-
-.prt {
+.posters__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  list-style: none;
+  font-style: normal;
 }
 
-.caption {
+.posters__list:visited {
+  color: var(--secondary-text-color);
+}
+
+.posters__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.posters__item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.posters__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.posters__case {
+  position: relative;
+}
+
+.posters__link {
+  text-decoration-line: none;
+}
+
+.posters__link:hover .posters__box,
+.posters__link:focus .posters__box {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.posters__link:hover .back-form,
+.posters__link:focus .back-form {
+  transform: translatey(0);
+}
+
+.posters__link .posters__link:visited {
+  color: #212121;
+}
+
+.posters__box {
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+}
+
+.posters__container {
+  overflow: hidden;
+  position: relative;
+}
+
+.posters__caption {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 20px;
@@ -892,40 +924,7 @@ body {
   border-right: 1px solid #eeeeee;
 }
 
-.list-poster {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.list-poster:nth-child(3n + 3) {
-  margin-right: 0;
-}
-
-.list-poster:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.shadow {
-  width: 100%;
-  height: 100%;
-  box-shadow: none;
-  position: relative;
-}
-
-.posters:hover .shadow,
-.posters:focus .shadow {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.posters {
-  text-decoration-line: none;
-}
-
-.posters:visited {
-  color: #212121;
-}
-
-.posters-plogo {
+.posters__title {
   margin-bottom: 4px;
   color: #212121;
   font-weight: 700;
@@ -934,13 +933,17 @@ body {
   letter-spacing: 0.06em;
 }
 
-.posters-ptext {
+.posters__title:visited {
+  color: #212121;
+}
+
+.posters__service {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
 }
 
-.box-posters {
+.back-form {
   width: 370px;
   height: 294px;
   position: absolute;
@@ -952,17 +955,7 @@ body {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.posters:hover .box-posters,
-.posters:focus .box-posters {
-  transform: translatey(0);
-}
-
-.container-over {
-  overflow: hidden;
-  position: relative;
-}
-
-.text-back {
+.back-form__text {
   margin-right: 24px;
   margin-left: 24px;
   font-family: Roboto;

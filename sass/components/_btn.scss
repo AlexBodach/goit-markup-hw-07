@@ -16,7 +16,7 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-/*---------Кнопка в HEADER--------------------*/
+/*---------Кнопка в FOOTER--------------------*/
 
 .post__button {
   padding-left: 29px;
@@ -29,4 +29,12 @@
   right: 26px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/*---------Кнопка d форме--------------------*/
+.button-modal {
+  padding-right: 56px;
+  padding-left: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

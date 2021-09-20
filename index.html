@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашняя работа 6</title>
+    <title>Домашняя работа 7</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,7 +14,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
@@ -75,7 +74,7 @@
       </section>
       <section class="peculiarities">
         <div class="container">
-          <h2 class="peculiarities__name">Особенности</h2>
+          <h2 class="peculiarities__name is-hidden">Особенности</h2>
           <ul class="peculiarities__list">
             <li class="peculiarities__item">
               <div class="peculiarities__box">
@@ -459,19 +458,19 @@
             </li>
           </ul>
         </div>
-       <label>
-          <div class="post">
+        <div class="post">
+          <label>
             <h3 class="post__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-            <input type="email" class="post__email" placeholder="E-mail" />
-            <button type="submit" class="button post__button">
-              Подписаться
-              <svg class="post__icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-telegram"></use>
-              </svg>
-            </button>
-          </div>
-          </div>
-       </label>
+            <input type="email" class="post__email" placeholder="E-mail"/>
+          </label>
+           <button type="submit" class="button post__button">
+            Подписаться
+            <svg class="post__icon" width="24" height="24">
+             <use href="./images/sprite.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -482,57 +481,64 @@
             </svg>
           </button>
         </div>
-        <div class="inform-box">
-          <form action="#" class="modal-form">
-            <h2 class="name-form">Оставьте свои данные, мы перезвоним</h2>
-            <div class="box-size">
-              <label class="label-size">
-                <p class="text-form">Имя</p>
-                <input type="text" class="inform" name="Username" />
-                <svg class="inform-icon" width="18" height="18">
+       
+        <form action="#" class="form">
+          <div class="form__box">
+            <h2 class="form__title">Оставьте свои данные, мы перезвоним</h2>
+            <div class="form__container">
+              <label>
+                <p class="form__name">Имя</p>
+                <input type="text" class="form__input" name="Username" />
+                <svg class="form__icon" width="18" height="18">
                   <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
               </label>
             </div>
-            <div class="box-size">
+            <div class="form__container">
               <label>
-                <p class="text-form">Телефон</p>
-                <input type="tel" class="inform" name="phone-number" />
-                <svg class="inform-icon" width="18" height="18">
+                <p class="form__name">Телефон</p>
+                <input type="tel" class="form__input" name="phone-number" />
+                <svg class="form__icon" width="18" height="18">
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
               </label>
             </div>
-            <div class="box-size">
+            <div class="form__container">
               <label>
-                <p class="text-form">Почта</p>
-                <input type="email" class="inform" name="Email" />
-                <svg class="inform-icon" width="18" height="18">
+                <p class="form__name">Почта</p>
+                <input type="email" class="form__input" name="Email" />
+                <svg class="form__icon" width="18" height="18">
                   <use href="./images/sprite.svg#icon-email"></use>
                 </svg>
               </label>
             </div>
-            <div class="box-comment">
+            <div class="form__container form__container--comment">
               <label>
-                <p class="text-form">Комментарий</p>
-                <textarea name="Comment" class="inform textcomment"></textarea>
+                <p class="form__name">Комментарий</p>
+                <textarea name="Comment" class="form__input form__input--comment"></textarea>
               </label>
             </div>
-            <label class="checkbox">             
-                <div class="checkbox__box">
+            <label>             
+                <div class="inform-chek__box">
                   <input type="checkbox" class="inform-chek" name="License">
-                  <div class="check__box"></div>
-                  <p class="agreement">Соглашаюсь с рассылкой и принимаю
-                    <a href="" class="agreement-link">Условия договора</a></p>
+                  <div class="inform-chek__case"></div>
+                  <p class="inform-chek__agreement">Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="inform-chek__link">Условия договора</a></p>
                 </div>           
             </label>
-            <div class="box-button">
-              <button type="submit" class="button-modal">Отправить</button>
+            <div class="button__box">
+              <button type="submit" class=" button button-modal">Отправить</button>
             </div>
-          </form>
-        </div>
-        </div>
+          </div>
+        </form>        
       </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
+
+
+
+  
